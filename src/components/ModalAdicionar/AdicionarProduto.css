@@ -1,0 +1,90 @@
+.AdicionaProduto {
+  font-family: 'Exo';
+  border-radius: 10px;
+  max-height: 350px;
+  box-sizing: border-box;
+  width: 325px;
+  display: flex;
+  position: relative;
+  transform: translateY(-15px);
+  margin-right: -45px;
+}
+
+.AdicionaProduto form div {
+  display: flex;
+  margin: 15px 0;
+}
+
+.AdicionaProduto form {
+  width: 100%;
+}
+
+.AdicionaProduto div input {
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  margin-left: 15px;
+  border-radius: 5px;
+  height: 20px;
+  padding: 2px 10px;
+}
+
+.AdicionaProduto__text {
+  font-size: 1em;
+  line-height: 100%;
+}
+
+.AdicionaProduto__foto-label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.AdicionaProduto__foto {
+  display: none;
+}
+
+.AdicionaProduto__enviar {
+  background-color: #fff;
+  cursor: pointer;
+  color: black;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.AdicionaProduto__enviar:disabled {
+  background-color: gray;
+}
+
+.AdicionaProdutoModal input {
+  border-radius: 20px;
+  border: none;
+  padding: 4px 10px;
+  width: 100%;
+}
+
+.AdicionaProdutoModal button{
+  border-radius: 20px;
+  border: navajowhite;
+  background-color: cadetblue;
+  color: white;
+  padding: 4px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.AdicionaProdutoModal div {
+  margin-bottom: 20px;
+}
+.AdicionaProdutoModal h2 {
+  margin-bottom: 50px;
+  color: cadetblue;
+  font-weight: 900;
+}

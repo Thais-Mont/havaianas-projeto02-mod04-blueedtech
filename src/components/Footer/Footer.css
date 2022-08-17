@@ -1,0 +1,75 @@
+.footerContato-dark{
+  background-color: #14A7FF;
+  color: white;
+  font-size: 20px;
+}
+
+.footerContato-green{
+  background-color: #2B411B;
+  color: white;
+  font-size: 20px;
+}
+
+.footerContato-greenligth{
+  background-color: #02C9A4;
+  color: white;
+  font-size: 20px;
+}
+
+.icone{
+  width: 30px;
+}
+
+.footer__elementos{
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.redes{
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  background-color: transparent;
+}
+
+.redes_caio,
+.redes_thais{
+  display: flex;
+  flex-direction: column;
+}
+
+.icons{
+  display: flex;
+  align-items:center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: rgb(69, 65, 65);
+}
+
+
+.copy{
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+  .redes{
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  .redes_caio,
+.redes_thais{
+  justify-content:center;
+}
+}

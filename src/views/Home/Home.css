@@ -1,0 +1,16 @@
+@import url('bootstrap/dist/css/bootstrap.min.css');
+
+* { box-sizing: border-box; }
+
+ 
+.Home__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 350px) {
+  .Home__container {
+    justify-content: unset;
+  }
+}

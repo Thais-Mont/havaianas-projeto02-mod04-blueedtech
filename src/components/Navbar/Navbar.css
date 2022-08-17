@@ -1,0 +1,62 @@
+
+.navbar-dark {
+  background-color: #14A7FF;
+}
+
+.navbar-green {
+  background-color: #2B411B;
+}
+
+.navbar-greenligth {
+  background-color: #02C9A4;
+}
+
+
+.container-fluid img {
+  position: relative;
+  bottom: 6px;
+}
+.offcanvas-body a {
+  color: white;
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+.menu_expand{
+  background: #14a7ff !important;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+
+.nav{
+  height: 80px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+
+.nav-item a {
+  margin-right: 10px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+.row{
+  width: 100%;
+}
+
+.align{
+  display: flex;
+  justify-content: space-around;
+}
+.Linhas__bottons{
+  cursor: pointer;
+  margin-right: 20px;
+}
+

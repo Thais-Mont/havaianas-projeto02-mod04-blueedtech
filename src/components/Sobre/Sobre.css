@@ -1,0 +1,64 @@
+.dark,
+.green,
+.greenligth {
+  margin-top: 80px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.dark {
+  background-color: #14a7ff;
+}
+
+.green {
+  background-color: #2B411B;
+  color: #fff;
+}
+
+.greenligth {
+  background-color: #02C9A4;
+}
+
+.havaianas_tns_texto h1{
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  max-width: 500px;
+}
+
+.havaianas_tns_texto p{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  max-width: 500px;
+}
+
+.havaianas_tns_button{
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000081;
+  color: white;
+  font-weight: 900;
+}
+  .havaianas_tns_imagem{
+    width: auto;
+  }
+
+@media (max-width: 768px) {
+
+  .havaianas_tns_imagem{
+    width: 85%;
+    text-align: center;
+  }
+
+  .havaianas_tns_texto {
+    text-align: center;
+  }
+
+}

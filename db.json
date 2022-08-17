@@ -1,0 +1,48 @@
+{
+  "produtos": [
+      {
+        "titulo": "Chinelo Havaianas Disney Margarida",
+        "descricao":
+          "A Havaianas Disney Stylish é a opção certeira para dar aquela boa animada no look mas sem perder o fashionismo. São três modelos com estampas nada óbvias dos personagens Disney que vão dar aquele brilho a mais na produção. ",
+        "foto":" require(../assets/images/colecao01_margarida1.png)",
+        "foto2": "require(../assets/images/colecao01_margarida2.png)",
+        "preco": 39.90
+      },
+      {
+        "titulo": "Chinelo Havaianas Disney Mickey",
+        "descricao":
+          "A Havaianas Disney Stylish é a opção certeira para dar aquela boa animada no look mas sem perder o fashionismo. São três modelos com estampas nada óbvias dos personagens Disney que vão dar aquele brilho a mais na produção. ",
+          "foto": "require(../assets/images/colecao01_mickey1.png)",
+        "preco": 39.90
+      },
+      {
+        "titulo": "Chinelo Havaianas Disney Minnie",
+        "descricao":
+          "A Havaianas Disney Stylish é a opção certeira para dar aquela boa animada no look mas sem perder o fashionismo. São três modelos com estampas nada óbvias dos personagens Disney que vão dar aquele brilho a mais na produção. ",
+          "foto": "require(../assets/images/colecao01_minnie1.png)",
+        "preco": 39.90
+      },
+      {
+        "titulo": "Chinelo Havaianas Disney Pateta",
+        "descricao":
+          "A Havaianas Disney Stylish é a opção certeira para dar aquela boa animada no look mas sem perder o fashionismo. São três modelos com estampas nada óbvias dos personagens Disney que vão dar aquele brilho a mais na produção. ",
+          "foto": "require(../assets/images/colecao01_pateta1.png)",
+        "preco": 39.90
+      },
+      {
+        "titulo": "Chinelo Havaianas Disney Pluto",
+        "descricao":
+          "A Havaianas Disney Stylish é a opção certeira para dar aquela boa animada no look mas sem perder o fashionismo. São três modelos com estampas nada óbvias dos personagens Disney que vão dar aquele brilho a mais na produção. ",
+          "foto": "require(../assets/images/colecao01_pluto1.png)",
+        "preco": 39.90
+      },
+      {
+        "titulo": "Chinelo Havaianas Disney Love",
+       "descricao":
+          "A Havaianas Disney Stylish é a opção certeira para dar aquela boa animada no look mas sem perder o fashionismo. São três modelos com estampas nada óbvias dos personagens Disney que vão dar aquele brilho a mais na produção. ",
+        "foto": "require(../assets/images/colecao01_love1.png)",
+        "preco": 39.90
+      }
+  ]
+}
+
