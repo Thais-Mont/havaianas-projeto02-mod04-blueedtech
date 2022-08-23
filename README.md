@@ -1,7 +1,7 @@
 # Projeto Remake Havaianas - Frontend NodeJS com ReactJS
 
 ### Deploy
-Deploy com Heroku: https://projetohavaianas-blueedtech.herokuapp.com/
+Deploy com Heroku: https://projeto-havaianas-reactjs.herokuapp.com/
 Deploy API: 
 
 Projeto desenvolvido durante o curso de FullStack.

@@ -8,6 +8,6 @@ const ProdutoContext = {
 };
 
 export const Api = {
-  baseUrl: "http://localhost:3001/",
+  baseUrl: 'https://havaianas-projeto02-mod04-blue.herokuapp.com/',
   ...ProdutoContext,
 };
