@@ -11,21 +11,22 @@ const transformProduto = (produto) => {
 };
 
 
-
 const parseTransformLista = (response) => parseResponse(response).then((produtos) => produtos.map(transformProduto));
 
 const parseTransformItem = (response) => parseResponse(response).then(transformProduto);
 
 export const ProdutoService = {
   getLista: () =>
-    fetch(Api.paletaLista(), { method: "GET" }).then(parseTransformLista),
+    fetch(Api.produtoLista(), { method: "GET" }).then(parseTransformLista),
   getById: (id) =>
-    fetch(Api.paletaById(id), { method: "GET" }).then(parseTransformItem),
+    fetch(Api.produtoById(id), { method: "GET" }).then(parseTransformItem),
   create: (produto) => fetch(Api.createProduto(), { method: "POST", body: JSON.stringify(produto), mode: "cors", headers: {
         "Content-Type": "application/json",
     } }).then(parseTransformItem),
-  updateById: (id) =>
-    fetch(Api.updatePaletaById(id), { method: "PUT" }).then(parseResponse),
+  updateById: (id, produto) =>
+    fetch(Api.updateProdutoById(id), { method: "PUT",  body: JSON.stringify(produto), mode: "cors", headers: {
+      "Content-Type": "application/json",
+  } }).then(parseResponse),
   deleteById: (id) =>
-    fetch(Api.deletePaletaById(id), { method: "DELETE" }).then(parseResponse),
+    fetch(Api.deleteProdutoById(id), { method: "DELETE" }).then(parseResponse),
 };

@@ -2,6 +2,7 @@
 
 ### Deploy
 Deploy com Heroku: https://projetohavaianas-blueedtech.herokuapp.com/
+Deploy API: 
 
 Projeto desenvolvido durante o curso de FullStack.
 Usando as tecnologias e ferramentas: 

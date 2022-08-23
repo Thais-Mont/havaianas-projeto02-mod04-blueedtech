@@ -60,3 +60,28 @@
   margin-right: 20px;
 }
 
+.Produto {
+  transform: translateY(-3px);
+  border-radius: 10px;
+  transition: all .5s;
+  padding: 0;
+}
+
+.Produto__icone {
+  cursor: pointer;
+  transform: translateY(3px);
+}
+
+.Produto--ativo{
+  background: #FFCB00;
+}
+
+.Opcoes__produto{
+  transition: all .5s;
+}
+
+.Opcoes__produto:hover{
+  cursor: pointer;
+  transition: all .5s;
+  transform: scale(1.02);
+}

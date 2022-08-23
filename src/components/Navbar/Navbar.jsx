@@ -1,3 +1,4 @@
+import { ActionMode } from "../../constants/index";
 import './Navbar.css';
 import { useState, useEffect } from 'react';
 import Logo from '../../assets/logo/logo.svg';
@@ -5,10 +6,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import havaianas from '../../assets/images/havaianas.svg';
+import alterar from '../../assets/images/alterar.svg';
+import deletar from '../../assets/images/deletar.svg';
 import Image from 'react-bootstrap/Image';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-function NavbarShow({ createProduto, bannerIndex }) {
+function NavbarShow({ createProduto, bannerIndex, updateProduto, deleteProduto, mode }) {
   const [background, setBackground] = useState('dark');
 
   const closeModal = () => {};
@@ -26,6 +29,7 @@ function NavbarShow({ createProduto, bannerIndex }) {
   }, [bannerIndex]);
 
   return (
+    
     <>
       <Navbar key="md" expand="md" variant={background}>
         <Container fluid>
@@ -51,6 +55,26 @@ function NavbarShow({ createProduto, bannerIndex }) {
               <Nav className="d-flex">
                 <Image
                   variant="outline"
+                  className={`Opcoes__produto Produto ${ mode === ActionMode.ATUALIZAR && "Produto--ativo"}`}
+                  onClick={() => updateProduto()}
+                  width={80}
+                  height={50}
+                  alt="Alterar"
+                  src={alterar}
+                ></Image>
+                <Image
+                  variant="outline"
+                  className={`Opcoes__produto Produto ${ mode === ActionMode.DELETAR && "Produto--ativo"}`}
+                  onClick={() => deleteProduto()}
+                  width={80}
+                  height={50}
+                  alt="Deletar"
+                  src={deletar}
+                ></Image>
+              </Nav>
+              <Nav className="d-flex">
+                <Image
+                  variant="outline"
                   onClick={() => createProduto(closeModal, onCreateProduto)}
                   className="Linhas__bottons"
                   width={80}
@@ -64,6 +88,7 @@ function NavbarShow({ createProduto, bannerIndex }) {
         </Container>
       </Navbar>
     </>
+    
   );
 }
 

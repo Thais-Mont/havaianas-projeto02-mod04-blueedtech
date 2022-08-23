@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 import Modal from "components/Modal/Modal";
 import { ProdutoService } from "services/ProdutoService";
 
-function AdicionarProduto({ closeModal, onCreateProduto }) {
+function AlterarProduto({ closeModal, onAlterProduto, produto }) {
     const form = {
-        preco: "",
-        titulo: "",
-        descricao: "",
-        foto: "",
+        preco: produto.preco,
+        titulo: produto.titulo,
+        descricao: produto.descricao,
+        foto: produto.foto,
     };
 
     const [state, setState] = useState(form);
@@ -35,18 +35,18 @@ function AdicionarProduto({ closeModal, onCreateProduto }) {
 
     const createProduto = async () => {
         
-
+      console.log('ola');
         const { titulo, descricao, preco, foto } = state;
 
-        const produto = {
+        const produtoEdit = {
             titulo,
             descricao,
             preco: parseFloat(preco),
             foto,
         };
 
-        const response = await ProdutoService.create(produto);
-        onCreateProduto(response);
+        const response = await ProdutoService.updateById(produto._id, produtoEdit);
+        onAlterProduto(response);
         closeModal();
     };
 
@@ -101,9 +101,8 @@ function AdicionarProduto({ closeModal, onCreateProduto }) {
                     <button
                         className="AdicionaProdutoModal__enviar"
                         type="button"
-                        disabled={canDisable}
-                        onClick={createProduto} >
-                        Enviar
+                        onClick={()=> createProduto()} >
+                        Salvar
                     </button>
                 </form>
             </div>
@@ -111,4 +110,4 @@ function AdicionarProduto({ closeModal, onCreateProduto }) {
     );
 }
 
-export default AdicionarProduto;
+export default AlterarProduto;
