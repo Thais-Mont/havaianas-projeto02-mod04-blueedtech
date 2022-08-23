@@ -2,7 +2,7 @@
 
 ### Deploy
 Deploy com Heroku: https://projeto-havaianas-reactjs.herokuapp.com/
-Deploy API: 
+Deploy API: http://havaianas-projeto02-mod04-blue.herokuapp.com/
 
 Projeto desenvolvido durante o curso de FullStack.
 Usando as tecnologias e ferramentas: 
